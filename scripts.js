@@ -2,7 +2,7 @@ function fetchRandomQuote() {
     fetch("https://api.api-ninjas.com/v1/quotes", {
       method: "GET",
       headers: {
-        'X-Api-Key': '/utuzvnY3/Aw7w5ck4DKWA==udmGTR8SbtINIZbZ' // <- coloque sua chave aqui
+        'X-Api-Key': '/utuzvnY3/Aw7w5ck4DKWA==udmGTR8SbtINIZbZ' 
       }
     })
       .then(response => response.json())
@@ -20,6 +20,6 @@ function fetchRandomQuote() {
   
   document.getElementById("generator").addEventListener("click", fetchRandomQuote);
   
-  // opcional: já exibe uma ao carregar
+  
   fetchRandomQuote();
   
