@@ -1,6 +1,6 @@
 function fetchRandomQuote() {
     fetch("https://api.quotable.io/random")
-    .then (respone => Response.json())
+    .then (response => Response.json())
     .then (data => {
         const quote = data.content;
         document.getElementById ("quote").textContent = quote;
